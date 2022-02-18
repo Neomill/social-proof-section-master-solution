@@ -1,0 +1,30 @@
+// declaration of css custom properties( sometimes 
+// referred to as css variablesm or cascading variables)
+
+:root{
+    --clr-primary-700: rgb(231, 84, 231);
+    --clr-primary-300: hsl(33, 80%, 67%);
+    
+    --clr-nuetral-100: hsl(303, 10%, 53%);
+    --clr-neutral-200: hsl(300, 24%, 96);
+    --clr-neutral-300: hsl(0, 0%, 100%);
+
+    --ff-primary: 'spartan', sans-serif;
+
+    --fs-400: 0.8125rem;
+    --fs-500: .9625rem;
+    --fs-900: 2rem;
+
+
+    // this ruleset can only use with css custom variable, you can't change
+    // a sass variable inside media queries.
+    // below is the compiled css, notice theres a :root inside the ruleset
+    // @media (min-width: 50em) {
+    //   :root {
+    //     --fs-900: 3rem;
+    //   }
+    // }
+    @media (min-width: 50em){
+        --fs-900: 3rem;
+    }
+}
