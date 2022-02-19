@@ -1,0 +1,30 @@
+body{
+    font-family: var(--ff-primary);
+
+    //we set the base font size to 13px. consider the font size of the content not 
+    //the h1 or any other element.
+    font-size: var(--fs-400);
+
+    // instead of adding a margin-top on h1,(the h1 tag is direct child of the body, not 
+    // having any containers) we add padding-top on the body so even we change the content 
+    // the space above is maintain
+    padding-top: 5rem;
+
+    // since we apply mobile-first development. we set default text-align to center
+    text-align: center;
+}
+
+h1{
+    font-size: var(--fs-900);
+    color: var(--clr-primary-700);
+    line-height: 1;
+    max-width: 12ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    font-weight: 800;
+}
+
+.lead{
+    font-size: var(--fs500);
+}
