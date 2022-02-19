@@ -2,14 +2,14 @@
 // referred to as css variablesm or cascading variables)
 
 :root{
-    --clr-primary-700: rgb(231, 84, 231);
-    --clr-primary-300: hsl(33, 80%, 67%);
+    --clr-primary-700: hsl(300, 43%, 22%);
+    --clr-primary-300: hsl(333, 80%, 67%);
     
     --clr-nuetral-100: hsl(303, 10%, 53%);
-    --clr-neutral-200: hsl(300, 24%, 96);
+    --clr-neutral-200: hsl(300, 24%, 96%);
     --clr-neutral-300: hsl(0, 0%, 100%);
 
-    --ff-primary: 'spartan', sans-serif;
+    --ff-primary: 'Spartan', sans-serif;
 
     --fs-400: 0.8125rem;
     --fs-500: .9625rem;
