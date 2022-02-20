@@ -12,6 +12,11 @@
       href="./images/favicon-32x32.png"
     />
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet"> 
+
     <title>Frontend Mentor | Social proof section</title>
 
     <link rel="stylesheet" href="dist/css/main.css">
@@ -28,62 +33,37 @@
   </head>
   <body>
     <main>
-      <h1>
-        10,000+ of our users love our products.
-      </h1>
-      <p class="lead">
-        We only provide great products combined with excellent customer service.
-        See what our satisfied customers are saying about our services.
-      </p>
+      <div class="container">
+        <h1>
+          10,000+ of our users love our products.
+        </h1>
+        <p class="lead">
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
 
-      <ul class="rating">
-        <li class="rating-item">
-          <p class="rating_one">
-            Rated 5 Stars in Reviews
-          </p>
-        </li>
-        <li class="rating-item">
-          <p class="rating_two" >
-            Rated 5 Stars in Report Guru
-          </p>
-        </li>
-        <li class="rating-item">
-          <p class="rating_three" >
-            Rated 5 Stars in BestTech 
-          </p>
-        </li>
-      </ul>
-        
-      <ul class="qoutes">
+        <ul class="review">
+          <li>
+              Rated 5 Stars in Reviews
+          </li>
+          <li>
+              Rated 5 Stars in Report Guru
+          </li>
+          <li>
+              Rated 5 Stars in BestTech
+          </li>
+        </ul>
+          
+        <ul class="qoutes">
 
-        <li>
-          <blockquote>
-          <!-- if the image is avatar we keep the alt attribute and set nothing to it,
-          but if the this image is a decorational image we have to add text in alt attr -->
-          <div class="blockqoute_header">
-            <img src="images/image-colton.jpg" alt="">
-            <p class="name">
-              Colton Smith 
-            </p>
-            <p class="status">
-              Verified Buyer
-            </p>
-          </div>
-
-          <p class="qoute">
-            We needed the same printed design as the one we had ordered a week prior.
-            Not only did they find the original order, but we also received it in time.
-            Excellent!
-          </p>
-          </blockquote>
-        </li>
-
-        <li>
-          <blockquote>
+          <li>
+            <blockquote>
+            <!-- if the image is avatar we keep the alt attribute and set nothing to it,
+            but if the this image is a decorational image we have to add text in alt attr -->
             <div class="blockqoute_header">
-              <img src="images/image-irene.jpg" alt="">
+              <img src="images/image-colton.jpg" alt="">
               <p class="name">
-                Irene Roberts 
+                Colton Smith 
               </p>
               <p class="status">
                 Verified Buyer
@@ -91,32 +71,56 @@
             </div>
 
             <p class="qoute">
-              "Customer service is always excellent and very quick turn around. Completely
-            delighted with the simplicity of the purchase and the speed of delivery."
+              We needed the same printed design as the one we had ordered a week prior.
+              Not only did they find the original order, but we also received it in time.
+              Excellent!
             </p>
-          </blockquote>
-        </li>
+            </blockquote>
+          </li>
 
-        <li>
-          <blockquote>
-            <div class="blockqoute_header">
-              <img src="images/image-anne.jpg" alt="">
-              <p class="name">
-                Anne Wallace 
-              </p>
-              <p class="status">
-                Verified Buyer
-              </p>
-            </div>
+          <li>
+            <blockquote>
+              <div class="blockqoute_header">
+                <img src="images/image-irene.jpg" alt="">
+                <p class="name">
+                  Irene Roberts 
+                </p>
+                <p class="status">
+                  Verified Buyer
+                </p>
+              </div>
 
-            <p class="qoute">
-              "Put an order with this company and can only praise them for the very high
-              standard. Will definitely use them again and recommend them to everyone!"
-            </p>
-          </blockquote>
-        </li>
-      </ul>
-      
+              <p class="qoute">
+                "Customer service is always excellent and very quick turn around. Completely
+              delighted with the simplicity of the purchase and the speed of delivery."
+              </p>
+            </blockquote>
+          </li>
+
+          <li>
+            <blockquote>
+              <div class="blockqoute_header">
+                <img src="images/image-anne.jpg" alt="">
+                <p class="name">
+                  Anne Wallace 
+                </p>
+                <p class="status">
+                  Verified Buyer
+                </p>
+              </div>
+
+              <p class="qoute">
+                "Put an order with this company and can only praise them for the very high
+                standard. Will definitely use them again and recommend them to everyone!"
+              </p>
+            </blockquote>
+          </li>
+        </ul>
+       </div> <!--close container -->
+       <!-- comment above is useful if there are lots of closing tag. 
+      adding 'close <classname>' comment will help determine where the closing 
+      tag belong. but don't over use them.
+      -->
     </main>
 
     <div class="attribution">

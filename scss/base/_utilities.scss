@@ -1,0 +1,8 @@
+.container{
+    // this rule limits the width of the wrapper for all the content
+    // this also makes the content always center if it reaches the
+    // maximum width
+    max-width: 70rem;
+    padding: 0 2em;
+    margin: 0 auto;
+}
