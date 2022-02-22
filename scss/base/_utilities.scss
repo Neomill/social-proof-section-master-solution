@@ -6,3 +6,30 @@
     padding: 0 2em;
     margin: 0 auto;
 }
+
+.flow-content > * + *{
+    margin-top: var(--flow-space, 1rem);
+}
+
+.blockqoute_header{
+    display: flex;
+}
+
+.split{
+
+    // we always need display flex for split
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+
+    //set the flex direction into row if browser has wide viewport
+    @media (min-width: 50em) {
+        flex-direction: row;
+    }
+}
+
+
+
+.al-center{
+    align-items: center;
+}

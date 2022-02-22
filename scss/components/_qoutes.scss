@@ -1,0 +1,51 @@
+.quotes{
+    --spacer: 2rem;
+    // you can change the spacing just for this part of the page
+    // with the help of css custom variable
+    --flow-space: 1rem;
+
+    li{
+        &:nth-child(2){
+            transform: translateY(1rem);
+        }
+        &:nth-child(3){
+            transform: translateY(2rem);
+        }
+    }
+
+    blockquote{
+        background: var(--clr-primary-700);
+        color: var(--clr-neutral-200);
+        text-align: left;
+        border-radius: var(--br);
+        padding: var(--spacer);
+        max-width: 25rem;
+        margin: 0 auto;
+
+        // this set all the height of the li element equal to its parent height.
+        height: 100%;
+
+
+    }
+
+    img{
+        width: 2.5rem;
+        border-radius: 50%;
+        margin-right: var(--spacer);
+    }
+
+    .name{
+        font-weight: 800;
+    }
+
+    .status {
+        color: var(--clr-primary-300);
+    }
+
+    .quote{
+        margin-top: var(--spacer);
+    }
+
+
+}
+
