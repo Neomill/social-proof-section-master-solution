@@ -12,6 +12,14 @@ body{
 
     // since we apply mobile-first development. we set default text-align to center
     text-align: center;
+
+    background-image: 
+        url(../../images/bg-pattern-top-desktop.svg),
+        url(../../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    background-size: 40%, 40%;
+    // background-size: max(50%, 400px);
 }
 
 h1{
@@ -19,13 +27,15 @@ h1{
     color: var(--clr-primary-700);
     line-height: 1;
     max-width: 12ch;
-    margin-bottom: 1em;
+    margin-bottom: .25em;
     font-weight: 800;
 
     //this media query only center the title if the screen is small
     @media (max-width: 50em) {
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 1em;
+
     }
 
 }
